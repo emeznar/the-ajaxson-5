@@ -53,6 +53,9 @@ function fetchAndDisplayGif(event) {
             } else {
             // 2. hide the feedback message and display the image
                 setGifLoadedStatus(true);
+                $("#five-selector").css("border-color","");
+                $("#jacksonText").css("color","");
+                $("#noGif").css("color","#f5f5f0");
             }
         },
         error: function() {
